@@ -20,7 +20,6 @@ object AppModule {
 
 
 
-
     @Provides
     @Singleton
     fun provideApiService(): ApiService {

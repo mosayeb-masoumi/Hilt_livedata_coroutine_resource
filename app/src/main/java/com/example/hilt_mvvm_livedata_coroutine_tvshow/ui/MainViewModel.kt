@@ -15,12 +15,7 @@ class MainViewModel @Inject constructor(private val mainRepository: MainReposito
 
     private val _responseList = MutableLiveData<Resource<List<UserItemModel>>>()
     val getTvShowList: MutableLiveData<Resource<List<UserItemModel>>> get() = _responseList
-
-
-
     val getItemLiveData: MutableLiveData<Resource<UserItemModel>> = MutableLiveData<Resource<UserItemModel>>()
-
-
 
 
     init {
