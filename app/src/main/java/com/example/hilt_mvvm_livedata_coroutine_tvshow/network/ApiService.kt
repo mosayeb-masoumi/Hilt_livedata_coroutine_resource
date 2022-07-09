@@ -5,7 +5,6 @@ import com.example.hilt_mvvm_livedata_coroutine_tvshow.helper.Constants
 import com.google.gson.JsonObject
 import retrofit2.Response
 import retrofit2.http.GET
-import java.util.ArrayList
 import retrofit2.Call
 
 interface ApiService {

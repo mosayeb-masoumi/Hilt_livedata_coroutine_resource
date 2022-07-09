@@ -2,11 +2,8 @@ package com.example.hilt_mvvm_livedata_coroutine_tvshow.network
 
 
 import com.example.hilt_mvvm_livedata_coroutine_tvshow.helper.Constants
-import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import okhttp3.*
-import org.json.JSONObject
-import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.IOException
@@ -56,8 +53,7 @@ class RetrofitClient @Inject constructor() {
                     // response if retrofit
                     val tokenModelResponse: retrofit2.Response<JsonObject?> = call!!.execute()
 
-
-                    if (tokenModelResponse.isSuccessful()) {
+                    if (tokenModelResponse.isSuccessful) {
                         return response.request.newBuilder()
                             .removeHeader("Authorization")
                             .removeHeader("Accept")
@@ -75,9 +71,7 @@ class RetrofitClient @Inject constructor() {
                 }
             })
 
-
             .build()
-
 
     }
 }
